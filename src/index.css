@@ -17,11 +17,7 @@ code {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 100vw;
-}
-
-.gap {
-  margin: 2;
+  width: 97vw;
 }
 
 .col-1 {
@@ -30,6 +26,16 @@ code {
 
 .col-2 {
   width: 60%;
+}
+
+.gap {
+  margin-left: 2rem;
+}
+
+.sticky {
+  position: sticky;
+  top: 2rem;
+  z-index: 1;
 }
 
 @media screen and (max-width: 600px) {

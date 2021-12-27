@@ -6,7 +6,7 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
 export default function SimpleCard(props) {
-  const { title, desc, tagline } = props;
+  const { title, desc, tagline, live, github, twitter } = props;
   return (
     <Card sx={{ minWidth: 275, margin: 2 }}>
       <CardContent>
@@ -27,8 +27,21 @@ export default function SimpleCard(props) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Github</Button>
-        <Button size="small">Twitter</Button>
+        {github ? (
+          <Button size="small" href={github}>
+            Github
+          </Button>
+        ) : null}
+        {live ? (
+          <Button size="small" href={live}>
+            Live
+          </Button>
+        ) : null}
+        {twitter ? (
+          <Button size="small" href={twitter}>
+            Twitter
+          </Button>
+        ) : null}
       </CardActions>
     </Card>
   );

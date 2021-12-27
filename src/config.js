@@ -29,6 +29,12 @@ export const config = {
 
   experience: [
     {
+      company: "Tamasha",
+      title: "Fullstack Developer Intern",
+      duration: "Dec 2021 -  present",
+      desc: "I have worked on nodejs and reactjs projects for Tamasha. I have worked on authenticating sockets and otp services in the backend. I have also helped in the migration of db calls to redis queries",
+    },
+    {
       title: "Software Engineer",
       company: "Google Summer of Code @ OWASP",
       duration: "june 2021 - aug 2021",
